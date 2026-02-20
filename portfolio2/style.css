@@ -171,3 +171,178 @@ footer {
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .skill-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .glass-section {
+        padding: 20px;
+    }
+}
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: white;
+    overflow-x: hidden;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+}
+
+.hero-text h1 {
+    font-size: 55px;
+    font-weight: 800;
+}
+
+.hero-text h3 {
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 30px;
+    background: #00c6ff;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* GLASS SECTIONS */
+.glass-section {
+    margin: 60px;
+    padding: 40px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+}
+
+/* SKILLS GRID */
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.skill-card {
+    padding: 20px;
+    text-align: center;
+    background: rgba(255,255,255,0.15);
+    border-radius: 15px;
+}
+
+/* PROJECT CARD */
+.project-card {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 15px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* ===================== */
+/* 🔥 MOBILE RESPONSIVE  */
+/* ===================== */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero {
+        padding: 20px;
+        text-align: center;
+        height: auto;
+        margin-top: 40px;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .hero-text h3 {
+        font-size: 18px;
+    }
+
+    .glass-section {
+        margin: 20px;
+        padding: 25px;
+    }
+
+    .skill-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    button {
+        width: 100%;
+    }
+}
